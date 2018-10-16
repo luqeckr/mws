@@ -1,22 +1,88 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>add2numbers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas Google MWS</title>
+    <meta name="Description" content="Tugas Google MWS - Menambahkan dua angka. Oleh Luqman Hakim">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
 <style>
-input {
-font-size: large
-}
+    .formGroup {
+        display: inline-grid;
+        margin-top: 2em;
+        margin-right: 0.5em;
+    }
+    .calc {
+        padding-top: 2em;
+    }
+    .calc>.formGroup>input {
+        font-size: large;
+        text-align: center;
+        padding: 2px;
+    }
+    .calc>.formGroup>label {
+        position: absolute;
+        margin-top: -23px;
+    }
 </style>
 </head>
 <body>
-<h1>Tambahkan Dua angka</h1>
-<div class="calc">
-<input type="text" size="5" placeholder="0" />
-+
-<input type="text" size="5" placeholder="0" />
-<button> = </button>
-<input type="text" size="5" readonly />
+<div class="container">
+    <div class="header">
+        <div class='menu'>
+            <a href="/" aria-label="home">
+                <img src="/images/icon-l.png" alt="Site logo">
+            </a>
+            
+        </div>
+        <div class="mws">
+            <img src="/images/mws.png" alt="Mobile Web Specialist by Google Developer Kejar">
+        </div>
+    </div>
+    <div class='sidebar'>
+        <picture>
+            <source media="(min-width: 451px)" srcset="/images/photo-normal.jpg">
+                <source media="(max-width: 450px)" srcset="/images/photo-small.jpg">
+            <img src="/images/photo-small.jpg" alt="ini foto saya">
+        </picture>
+    </div>
+    <div class="konten-container">
+        <div class='konten'>
+            <h3>Menjumlahkan dua angka</h3>
+            <p></p>
+            <div class="calc">
+                <div class="formGroup">
+                    <label for="angka1">Angka 1</label>
+                    <input id="angka1" type="text" size="5" placeholder="0" />
+                </div>
+                <div class="formGroup">
+                    <span>+</span>
+                </div>
+                <div class="formGroup">
+                    <label for="angka2">Angka 2</label>
+                    <input id="angka2" type="text" size="5" placeholder="0" />
+                </div>
+                <div class="formGroup">
+                    <button> = </button>
+                </div>
+                <div class="formGroup">
+                    <label for="hasil">Hasil</label>
+                    <input id="hasil" type="text" size="5" readonly />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="add2numbers.js"></script>
+    <div class='footer'>&copy; Luqman Hakim
+    </div>
+    <div id="social">
+        <a href="https://t.me/Luqeckr" class="socicon socicon-telegram" target="_blank"><span>Telegram: </span><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://twitter.com/luqeckr" class="socicon socicon-twitter" target="_blank"><span>Twitter: </span><i class="fab fa-twitter"></i></a>
+        <a href="https://fb.com/luqeckr" class="socicon socicon-facebook" target="_blank"><span>Facebook: </span><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/luqeckr" class="socicon socicon-github" target="_blank" title="Github" id="viewSource"><span>Github: </span><i class="fab fa-github"></i></a>
+    </div>
 </div>
-<script src="add2numbers.js"></script>
 </body>
 </html>
