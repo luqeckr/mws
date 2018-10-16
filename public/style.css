@@ -1,0 +1,161 @@
+html, body { 
+    height: 100%;
+    margin: 0px;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5em auto 50px;
+    min-height: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    /* grid-gap: 4px; */
+}
+.header {
+    background: linear-gradient(to right, midnightblue ,5%, #B3E7FC 30%, ghostwhite 100%);
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5em;
+}
+.header>.menu>h1 {
+    position: absolute;
+    margin-top: -58px;
+    margin-left: 80px;
+    color: transparent;
+    text-shadow: none;
+    transition: 0.7s;
+}
+.menu {
+    /* background: linear-gradient(to right, midnightblue ,15%, #B3E7FC 100%); */
+    grid-column: 1/2;
+}
+.mws {
+    /* background: linear-gradient(to right, #B3E7FC ,15%, ghostwhite 100%); */
+    grid-column: 2/-1;
+    padding: 0.8em;
+}
+.mws>img {
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
+}
+.menu > img, .menu > a > img {
+    max-width: 64px;
+    margin: 8px;
+}
+
+.sidebar {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 10px;
+    background: linear-gradient(to right, aliceblue ,10%, white 100%);
+}
+.sidebar>picture>img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 20px;
+}
+.konten-container {
+    grid-column: 2/-1;
+}
+.konten {
+    /* grid-column: 2/5; */
+    background: ghostwhite;
+    margin-top: 4px;
+    padding: 30px;
+}
+.konten > a {
+    color: darkred;
+    text-decoration: none;
+    text-shadow: 0 0 1px orangered;
+    transition: .4s;
+    font-size: 1.2em;
+}
+.konten:hover > a {
+    color: orangered;
+    text-shadow: 0px 1px 30px;
+    cursor: pointer;
+}
+
+.footer {
+    grid-column: 1/3;
+    padding: 12px;
+    line-height: 1.8em;
+}
+
+.footer, div#social {
+    background: aliceblue;
+    color: midnightblue;
+}
+
+div#social {
+    grid-column: 3/-1;
+    line-height: 2em;
+    text-align: right;
+    padding: 5px;
+    background: aliceblue;
+}
+a.socicon {
+    font-size: 1.9em;
+    line-height: 1.3em;
+    vertical-align: middle;
+    text-decoration: none;
+    color: royalblue;
+    margin-right: 3px;
+    transition: .2s;
+}
+
+a.socicon:hover, a.socicon:hover>span {
+    color: midnightblue;
+    text-shadow: 0 0 1px;
+}
+
+a.socicon>span {
+    vertical-align: middle;
+    display: none;
+    color: royalblue;
+}
+
+
+@media screen and (min-width: 650px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    a.socicon {
+        font-size: 1.9em;
+    }
+    a.socicon>span {
+        display: inline;
+        font-size: 0.3em;
+    }
+    .header>.menu>h1 {
+        text-shadow: 0 0 1px black;
+        color: ghostwhite;
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    a.socicon {
+        font-size: 2.2em;
+    }
+    a.socicon>span {
+        display: inline;
+        font-size: 0.4em;
+    }
+    .header>.menu>h1 {
+        text-shadow: 0 0 1px black;
+        color: ghostwhite;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}

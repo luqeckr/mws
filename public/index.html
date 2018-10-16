@@ -1,61 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-.container {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr;
-    grid-template-rows: 100% 1fr 1fr 1fr 30px;
-    grid-gap: 4px;
-}
-.menu {
-    background: linear-gradient(to right,#B3E7FC ,70%,cornflowerblue 100%);
-    grid-column: 1/5;
-    padding: 8px;
-}
-.sidebar {
-    grid-row: 2/5;
-    grid-column-end: 1/5;
-}
-.sidebar>img {
-    width: 100%;
-    border-radius: 20px;
-}
-.konten {
-    grid-column: 2/5;
-    background: aliceblue;
-    padding: 15px;
-}
-.konten > a {
-    color: darkred;
-    text-decoration: none;
-    text-shadow: 0 0 1px cornflowerblue;
-}
-.konten > a:hover {
-    color: red;
-    text-shadow: 0px 0px 30px blueviolet;
-}
-.footer {
-    background: cornflowerblue;
-    color: white;
-    text-shadow: 0 1px 5px black;
-    grid-column: 1/5;
-    padding: 5px;
-}
-
-
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas Google MWS</title>
+    <meta name="Description" content="Tugas dari Google Developer Kejar, Mobile Web Specialist. Oleh Luqman Hakim">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
-    <div class='menu'><img src="images/icon-l.png"></div>
-    <div class='sidebar'><img src="images/photo-small.jpg"></div>
-    <div class='konten'><a href="project1/add2numbers.html">Menjumlahkan dua angka</a></div>
-    <div class='konten'><a href="project2/">Lokasi Istimewa dengan Mapbox</a></div>
-    <div class='konten'>Project3</div>
-    <div class='footer'>Luqman Hakim</div>
+    <div class="header">
+        <div class='menu'>
+            <img src="images/icon-l.png" alt="Site logo">
+            <h1>Tugas Google MWS</h1>
+        </div>
+        <div class="mws">
+            <img src="images/mws.png" alt="Mobile Web Specialist by Google Developer Kejar">
+        </div>
+    </div>
+    <div class='sidebar'>
+        <picture>
+            <source media="(min-width: 451px)" srcset="images/photo-normal.jpg">
+                <source media="(max-width: 450px)" srcset="images/photo-small.jpg">
+            <img src="images/photo-small.jpg" alt="ini foto saya">
+        </picture>
+    </div>
+    <div class="konten-container">
+        <div class='konten'><a href="project1/add2numbers.html">Menjumlahkan dua angka</a></div>
+        <div class='konten'><a href="project2/">Lokasi Istimewa dengan Mapbox</a></div>
+        <div class='konten'><a href="ajax/">Asynchronous Javascript Requests</a></div>
+    </div>
+    <div class='footer'>&copy; Luqman Hakim
+    </div>
+    <div id="social">
+        <a href="https://t.me/Luqeckr" class="socicon socicon-telegram" target="_blank" rel="noopener" aria-label="telegram"><span>Telegram: </span><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://twitter.com/luqeckr" class="socicon socicon-twitter" target="_blank" rel="noopener" aria-label="twitter"><span>Twitter: </span><i class="fab fa-twitter"></i></a>
+        <a href="https://fb.com/luqeckr" class="socicon socicon-facebook" target="_blank" rel="noopener" aria-label="facebook"><span>Facebook: </span><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/luqeckr" class="socicon socicon-github" target="_blank" rel="noopener" title="Github" aria-label="view github page" id="viewSource"><span>Github: </span><i class="fab fa-github"></i></a>
+    </div>
 </div>
 </body>
-</html>   
+</html>
