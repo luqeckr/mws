@@ -1,0 +1,34 @@
+{
+    "places":[
+    {
+        "lokasi": [-5.134627, 119.490707],
+        "sponsor" : "PTIK UNHAS",
+        "gambar":"ptik",
+        "review": "<strong>PTIK Unhas</strong> - Kantor bersejarah<br>Lokasi: Kampus UNHAS Tamalanrea"
+    },
+    {
+        "lokasi": [-5.139906, 119.488468],
+        "sponsor" : "Pintu 1 UNHAS",
+        "gambar":"p1unhas",
+        "review": "Tempat jalan2/olahraga dihari libur<br>Lokasi: Pintu 1 Unhas Tamalanrea"
+    },
+    {
+        "lokasi": [-5.143144, 119.490491],
+        "sponsor" : "Warung Pangkep Sederhana",
+        "gambar":"warung_sederhana",
+        "review": "Warung ikan bakar murah meriah dan enak<br>Lokasi: Jl. Perintis Kemerdekaam 4, Tamalanrea"
+    },
+    {
+        "lokasi": [-5.144563, 119.465105],
+        "sponsor" : "Kolam Renang",
+        "gambar":"kolamrenang",
+        "review": "Kolam renang Tirta Lontara<br>Lokasi: Kodam VII Wirabuana Makassar"
+    },
+    {
+        "lokasi": [-5.141731, 119.484666],
+        "sponsor" : "Sop Sodara",
+        "gambar":"sopsodara",
+        "review": "Sop Sodara Enak!<br>Lokasi: jl. Perintis Kemerdekaan, km. 9"
+    }
+    ]
+}
