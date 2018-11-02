@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tugas Google MWS</title>
+    <meta name="theme-color" content="aliceblue">
+    <link rel="manifest" href="/manifest.json">
     <meta name="Description" content="Tugas Google MWS - Menambahkan dua angka. Oleh Luqman Hakim">
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 <style>
     .formGroup {
         display: inline-grid;
@@ -33,9 +33,12 @@
     <div class="header">
         <div class='menu'>
             <a href="/" aria-label="home">
-                <img src="/images/icon-l.png" alt="Site logo">
+            <picture>
+                <source media="(max-width: 450px)" srcset="/images/photo-small.jpg">
+                <img src="/images/icon-home.png" alt="Site logo">
+            </picture>
             </a>
-            
+            <h1>Tugas Google MWS</h1>
         </div>
         <div class="mws">
             <img src="/images/mws.png" alt="Mobile Web Specialist by Google Developer Kejar">
@@ -74,15 +77,16 @@
             </div>
         </div>
     </div>
-    <script src="add2numbers.js"></script>
     <div class='footer'>&copy; Luqman Hakim
-    </div>
-    <div id="social">
-        <a href="https://t.me/Luqeckr" class="socicon socicon-telegram" target="_blank"><span>Telegram: </span><i class="fab fa-telegram-plane"></i></a>
-        <a href="https://twitter.com/luqeckr" class="socicon socicon-twitter" target="_blank"><span>Twitter: </span><i class="fab fa-twitter"></i></a>
-        <a href="https://fb.com/luqeckr" class="socicon socicon-facebook" target="_blank"><span>Facebook: </span><i class="fab fa-facebook"></i></a>
-        <a href="https://github.com/luqeckr/mws" class="socicon socicon-github" target="_blank" rel="noopener" title="Github" aria-label="view source on github" id="viewSource"><span>Github: </span><i class="fab fa-github"></i></a>
-    </div>
+            </div>
+            <div id="social">
+                <a href="https://t.me/Luqeckr" class="socicon socicon-telegram" target="_blank" rel="noreferrer" aria-label="telegram"><span>Telegram: </span><img src="/images/icon-telegram.svg"></a>
+                <a href="https://twitter.com/luqeckr" class="socicon socicon-twitter" target="_blank" rel="noreferrer" aria-label="twitter"><span>Twitter: </span><img src="/images/icon-twitter.svg"></a>
+                <a href="https://fb.com/luqeckr" class="socicon socicon-facebook" target="_blank" rel="noreferrer" aria-label="facebook"><span>Facebook: </span><img src="/images/icon-facebook.svg"></a>
+                <a href="https://github.com/luqeckr/mws" class="socicon socicon-github" target="_blank" rel="noreferrer" title="Github" aria-label="view source on github" id="viewSource"><span>Github: </span><img src="/images/icon-github.svg"></a>
+            </div>
 </div>
+<script src="add2numbers.js"></script>
+<script src="/reg-sw.js"></script>
 </body>
 </html>

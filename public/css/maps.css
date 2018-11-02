@@ -1,9 +1,9 @@
-.container {
+.mapcontainer {
     display: grid;
-    height: 100%;
+    min-height: calc(100vh - 10em);
     grid-gap: 4px;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: 60% 40%;
+    grid-template-rows: auto 18em;
 }
 .peta {
     grid-column: 1/-1;
@@ -19,6 +19,12 @@
     padding: 1em;
 }
 
+.konten {
+    /* grid-column: 2/5; */
+    /* margin-top: 4px; */
+    padding: 10px;
+}
+
 div>img#gambar {
     max-width: 100%;
     max-height: 100%;
@@ -28,8 +34,8 @@ div>img#gambar {
 
 
 @media screen and (max-width: 700px) and (min-height: 500px) {
-    .container {
-        grid-template-rows: 50% 30% auto;
+    .mapcontainer {
+        grid-template-rows: auto 12em 6em;
     }
 
     .gambar, .review {
@@ -39,8 +45,8 @@ div>img#gambar {
 }
 
 @media screen and (max-width: 830px) and (max-height: 499px) {
-    .container {
-        grid-template-rows: 50% auto;
+    .mapcontainer {
+        grid-template-rows: auto 5em;
 
     }
 
@@ -51,5 +57,8 @@ div>img#gambar {
 
     .gambar, .review {
         grid-column: 6/-1;
+    }
+    .review {
+        font-size: x-small;
     }
 }

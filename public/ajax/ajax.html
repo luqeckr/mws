@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Async Requests">
+    <title>Async Requests</title>
+    <meta name="theme-color" content="aliceblue">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Make Asynchronous Requests</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+                <div class='menu'>
+                    <a href="/" aria-label="home">
+                    <picture>
+                        <source media="(max-width: 450px)" srcset="/images/photo-small.jpg">
+                        <img src="/images/icon-home.png" alt="Site logo">
+                    </picture>
+                    </a>
+                    <h1>Tugas Google MWS</h1>
+                </div>
+                <div class="mws">
+                    <img src="/images/mws.png" alt="Mobile Web Specialist by Google Developer Kejar">
+                </div>
+            </div>
+            <div class='sidebar'>
+                <picture>
+                    <source media="(min-width: 451px)" srcset="/images/photo-normal.jpg">
+                        <source media="(max-width: 450px)" srcset="/images/photo-small.jpg">
+                    <img src="/images/photo-small.jpg" alt="ini foto saya">
+                </picture>
+            </div>
+            <div class="konten-container">
+                <div class='konten'>
+    <header class="masthead">
+        <h1>What are you interested in today?</h1>
+
+        <div class="site-container">
+            <form id="search-form" action="#">
+                <label for="search-keyword" class="visuallyhidden">What are you interested in today?</label>
+                <input id="search-keyword" type="text" name="search-keyword" placeholder="e.g. Android" required>
+                <input id="submit-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </header>
+
+    <div class="site-container">
+        <div id="response-container"></div>
+    </div>
+    </div>
+            </div>
+            <div class='footer'>&copy; Luqman Hakim
+            </div>
+            <div id="social">
+                <a href="https://t.me/Luqeckr" class="socicon socicon-telegram" target="_blank" rel="noreferrer" aria-label="telegram"><span>Telegram: </span><img src="/images/icon-telegram.svg"></a>
+                <a href="https://twitter.com/luqeckr" class="socicon socicon-twitter" target="_blank" rel="noreferrer" aria-label="twitter"><span>Twitter: </span><img src="/images/icon-twitter.svg"></a>
+                <a href="https://fb.com/luqeckr" class="socicon socicon-facebook" target="_blank" rel="noreferrer" aria-label="facebook"><span>Facebook: </span><img src="/images/icon-facebook.svg"></a>
+                <a href="https://github.com/luqeckr/mws" class="socicon socicon-github" target="_blank" rel="noreferrer" title="Github" aria-label="view source on github" id="viewSource"><span>Github: </span><img src="/images/icon-github.svg"></a>
+            </div>
+        </div>
+    <script src="app.js"></script>
+    <script src="/reg-sw.js"></script>
+</body>
+</html>

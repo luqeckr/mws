@@ -1,13 +1,4 @@
 
-let circle = L.circle([-5.153585, 119.4385239], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 10
-}).addTo(mymap);
-circle.bindPopup("<b>Tempat meetup disini!</b><br>yes!").openPopup();
-let popup = L.popup();
-
 function onMapClick(e) {
     popup
     .setLatLng(e.latlng)
